@@ -1,7 +1,16 @@
+using Microsoft.EntityFrameworkCore;
+using ProgramowanieObiektoweStorageProject.DbServices;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+//Register DB
+builder.Services.AddDbContext<AppDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ItemConnection"));
+});
 
 var app = builder.Build();
 
