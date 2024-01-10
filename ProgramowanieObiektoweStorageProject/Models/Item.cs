@@ -13,10 +13,10 @@ namespace ProgramowanieObiektoweStorageProject.Models
         [Required]
         public int Quantity { get; set; }
         [Required]
-        [DisplayName("Volume of 1 item")]
+        [DisplayName("Volume of 1 item [m^2]")]
         public double ItemVolume { get; set; }
         [Required]
-        [DisplayName("Price of 1 item")]
+        [DisplayName("Price of 1 item [$]")]
         public decimal ItemPrice { get; set; }
         [Required]
         [DisplayName("Last modification date")]

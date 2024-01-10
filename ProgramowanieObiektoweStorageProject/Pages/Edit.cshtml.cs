@@ -47,7 +47,7 @@ namespace ProgramowanieObiektoweStorageProject.Pages
             {
                 return Page();
             }
-
+            Item.LastModificationDate = DateTime.Now;
             _context.Attach(Item).State = EntityState.Modified;
 
             try

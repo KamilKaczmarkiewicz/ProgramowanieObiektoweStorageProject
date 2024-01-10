@@ -42,6 +42,18 @@
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Item.LastModificationDate)
         </dd>
+        <dt class="col-sm-2">
+            Price of all items
+        </dt>
+        <dd class="col-sm-10">
+            @(Model.Item.ItemPrice * Model.Item.Quantity)
+        </dd>
+        <dt class="col-sm-2">
+            All volume
+        </dt>
+        <dd class="col-sm-10">
+            @(Model.Item.ItemVolume * Model.Item.Quantity)
+        </dd>
     </dl>
     
     <form method="post">

@@ -20,3 +20,21 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+th.active {
+    background-color: #ddd;
+}
+
+.sortable-column {
+    white-space: nowrap;
+}
+
+    .sortable-column a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .sortable-column.active a {
+        font-weight: bold;
+        color: #007bff; 
+    }

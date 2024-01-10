@@ -34,7 +34,7 @@ namespace ProgramowanieObiektoweStorageProject.Pages
             {
                 return Page();
             }
-
+            Item.LastModificationDate = DateTime.Now;
             _context.Items.Add(Item);
             await _context.SaveChangesAsync();
 
